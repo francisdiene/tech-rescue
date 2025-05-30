@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis Tech-Rescue</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Francis Tech-Rescue</h1>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#services">Nos services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" data-aos="fade-down">
+    <h2>Design – Technologie – Excellence</h2>
+    <p>Graphisme, e-commerce, dépannage et assistance informatique.</p>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>À propos</h2>
+    <p>Francis Tech-Rescue est une entreprise spécialisée dans la création graphique et les services informatiques personnalisés. Nous alignons design, technologie et efficacité pour répondre à vos besoins personnels et professionnels.</p>
+  </section>
+
+  <section id="services" data-aos="fade-left">
+    <h2>Nos services</h2>
+
+    <h3>🎨 Services graphiques</h3>
+    <div class="project-card">
+      <h4>Sites vitrines & e-commerce</h4>
+      <p>Création de sites modernes, adaptables et sur-mesure pour particuliers et entreprises.</p>
+    </div>
+    <div class="project-card">
+      <h4>Logos professionnels</h4>
+      <p>Conception de logos uniques et impactants pour votre image de marque.</p>
+    </div>
+    <div class="project-card">
+      <h4>Flyers & affiches</h4>
+      <p>Designs publicitaires pour événements, promotions et campagnes marketing.</p>
+    </div>
+    <div class="project-card">
+      <h4>Cartes de visite digitales</h4>
+        <p>Identité visuelle professionnelle et connectée.</p>
+    </div>
+
+    <h3>💻 Services informatiques</h3>
+    <div class="project-card">
+      <h4>Installation & réinitialisation Windows</h4>
+      <p>Remise à neuf de votre système pour de meilleures performances.</p>
+    </div>
+    <div class="project-card">
+      <h4>Récupération de compte iCloud verrouillé</h4>
+      <p>Assistance pour retrouver l'accès à votre appareil Apple.</p>
+    </div>
+    <div class="project-card">
+      <h4>Maintenance & optimisation PC</h4>
+      <p>Nettoyage, amélioration de la vitesse et entretien informatique.</p>
+    </div>
+    <div class="project-card">
+      <h4>Récupération de données & cloud</h4>
+      <p>Restauration de fichiers perdus, gestion et sauvegarde sur cloud sécurisé.</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="zoom-in">
+    <h2>Contactez-nous</h2>
+    <p>📍 Ouakam, cité avion – Rue 10 FN</p>
+    <form>
+      <input type="text" placeholder="Nom complet" required />
+      <input type="email" placeholder="Adresse email" required />
+      <textarea placeholder="Décrivez votre demande..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="contact-links">
+      <p>📱 <a href="https://wa.me/221782349908" target="_blank">WhatsApp : 78 234 99 08</a></p>
+      <p>👻 Snapchat : <strong>francis_0983</strong></p>
+      <p>🌐 <a href="http://www.tech-rescue.com" target="_blank">www.tech-rescue.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Francis Tech-Rescue. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
